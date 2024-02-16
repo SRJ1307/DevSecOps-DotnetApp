@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("devsecops")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34af70cb7d54e821db292b493e1a1ee0956398c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f26ae755fc407148f1d2e212d486208f622e1b25")]
 [assembly: System.Reflection.AssemblyProductAttribute("devsecops")]
 [assembly: System.Reflection.AssemblyTitleAttribute("devsecops")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

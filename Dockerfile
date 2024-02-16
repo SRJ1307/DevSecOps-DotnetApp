@@ -8,10 +8,10 @@ USER app
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG configuration=Release
 WORKDIR /src
-COPY ["devsecops/devsecops.csproj", "devsecops/"]
-RUN dotnet restore "devsecops/devsecops.csproj"
+COPY ["devsecops.csproj", "/"]
+RUN dotnet restore "devsecops.csproj"
 COPY . .
-WORKDIR "/src/devsecops"
+WORKDIR "/src/"
 RUN dotnet build "devsecops.csproj" -c $configuration -o /app/build
 
 FROM build AS publish

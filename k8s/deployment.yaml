@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnetapp
+spec:
+  selector:
+    matchLabels:
+      app: dotnetapp
+  template:
+    metadata:
+      labels:
+        app: dotnetapp
+    spec:
+      containers:
+      - name: dotnetapp
+        image: nginx:latest
+        envFrom:
+        - configMapRef:
+           name: game-demo                # from the key name in the ConfigMap.
+          
+        ports:
+          - containerPort: 5000

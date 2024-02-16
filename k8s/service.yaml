@@ -8,4 +8,4 @@ spec:
       targetPort: 5000
   type: LoadBalancer
   selector:
-    app: dotnetapp
+    app: dotnetapp    
